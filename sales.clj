@@ -1,3 +1,6 @@
+(ns clojure.ypandya614929.salesorder
+    (:gen-class))
+
 ; Variable declarations
 (def customers_dict (atom()))
 (def product_dict (atom()))

@@ -1,6 +1,3 @@
-(ns clojure.ypandya614929.salesorder
-    (:gen-class))
-
 ; Variable declarations
 (def customers_dict (atom()))
 (def product_dict (atom()))
@@ -212,9 +209,14 @@
 (inputList))
 
 
-; Invoking functions
-; ------------------
-(loadCustomerData)
-(loadProductData)
-(loadSalesData)
-(inputList)
+(defn main []
+			; Invoking functions
+			; ------------------
+			(loadCustomerData)
+			(loadProductData)
+			(loadSalesData)
+			(inputList)
+)
+
+ ; Invoking main function
+(main)

@@ -20,7 +20,7 @@
   	(println "=============== Customer Data ===============\n")
    (doseq [data sorted_customer_dict]
    				(def val_obj (get data :val))
-       (println (get data :c_id) ":" (get val_obj :name)":"(get val_obj :add)":"(get val_obj :phone)))
+   				(println (str (get data :c_id)": [""\""(get val_obj :name)"\"" " " "\"" (get val_obj :add)"\"" " " "\""(get val_obj :phone)"\"""]")) )
   	(println "\n=============================================\n"))
 
 
@@ -40,7 +40,7 @@
   	(println "=============== Product Data ===============\n")
    (doseq [data sorted_product_dict]
    				(def val_obj (get data :val))
-       (println (get data :p_id) ":" (get val_obj :name)":"(get val_obj :price)))
+   				(println (str (get data :p_id)": [""\""(get val_obj :name)"\"" " " "\"" (get val_obj :price)"\"" "]")) )
   	(println "\n=============================================\n"))
 
 
@@ -76,7 +76,7 @@
 														(def p_name (get p_val_obj :name))
 										)	
 							)
-       (println (get data :s_id) ":" c_name":"p_name":"(get val_obj :item_count)))
+							(println (str (get data :s_id)": [""\""c_name"\"" " " "\"" p_name"\"" " " "\""(get val_obj :item_count)"\"""]")) )
   	(println "\n=============================================\n"))
 	
 	
@@ -118,7 +118,7 @@
 			   														))))
 
 										(if (empty? @add_total_price)
-														(println (str c_name":")(str "$0")"\n")
+														(println (str c_name":")(str "$0.00")"\n")
       								(println (str c_name":")(str "$" (format "%.2f" (reduce + @add_total_price))) "\n"))
       )))
 

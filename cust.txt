@@ -1,3 +1,5 @@
 3|Fan Yuhong|165 Happy Lane|345-4533
 1|John Smith|123 Here Street|456-4567
-2|Sue Jones|43 Rose Court Street|345-7867
+4|Yash Pandya|1420 Rue Queenville|709-6149
+2|Sue Jones|43 Rose Court ntreet|345-7867
+5|Ayush Dave|1160 st mathieu|123-1234
